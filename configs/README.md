@@ -51,4 +51,4 @@ Carried over from v1.
 
 ## Release
 
-Bump `version`, then push a `configs-v<version>` tag. The workflow publishes with npm trusted publishing (OIDC); register this repo and `release-configs.yml` as the trusted publisher on npmjs.com first.
+Bump `version` in the root `package.json` and merge to `main`. The workflow publishes it if that version isn't on npm yet, using npm trusted publishing (OIDC). Register this repo and `release-configs.yml` as the trusted publisher on npmjs.com first.

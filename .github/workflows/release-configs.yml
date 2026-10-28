@@ -2,7 +2,8 @@ name: Release configs
 
 on:
   push:
-    tags: ['configs-v*']
+    branches: [main]
+    paths: [package.json]
 
 permissions: {}
 
@@ -20,6 +21,11 @@ jobs:
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org
-      - name: Tag matches package version
-        run: test "configs-v$(node -p "require('./package.json').version")" = "$GITHUB_REF_NAME"
-      - run: npm publish
+      - name: Publish if version is new
+        run: |
+          spec="$(node -p "require('./package.json').name + '@' + require('./package.json').version")"
+          if [ -n "$(npm view "$spec" version 2>/dev/null)" ]; then
+            echo "$spec already published"
+          else
+            npm publish
+          fi
