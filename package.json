@@ -1,6 +1,6 @@
 {
   "name": "@nejcm/configs",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Shared TypeScript, Oxlint and Oxfmt configs.",
   "keywords": [
     "config",
@@ -19,8 +19,10 @@
   "exports": {
     "./tsconfig/base.json": "./configs/tsconfig/base.json",
     "./tsconfig/lib.json": "./configs/tsconfig/lib.json",
+    "./tsconfig/nodenext.json": "./configs/tsconfig/nodenext.json",
     "./tsconfig/react.json": "./configs/tsconfig/react.json",
     "./oxlint.json": "./configs/oxlint.json",
+    "./oxlint.react.json": "./configs/oxlint.react.json",
     "./oxfmt": "./configs/oxfmt.js",
     "./prettier": "./configs/prettier.config.cjs",
     "./jest": "./configs/jest.config.cjs",
