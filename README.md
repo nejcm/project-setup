@@ -16,7 +16,7 @@ The checklist is a baseline, not a framework mandate. A project's deployment tar
 
 ## Contents
 
-- [configs/README.md](configs/README.md) — published `@nejcm/configs` package: TypeScript, Oxlint, Oxfmt, Prettier, Jest and release presets, global types, and GitHub actions.
+- [configs/README.md](configs/README.md) — published `@nejcm/configs` package: TypeScript, Oxlint, Oxfmt, Prettier, Jest and release presets, and global types.
 - [CHECKLIST.md](CHECKLIST.md) — agent workflow and tiered setup requirements.
 - [templates/AGENTS.md](templates/AGENTS.md), [CLAUDE.md](templates/CLAUDE.md), [CONTEXT.md](templates/CONTEXT.md) — project guidance and glossary starters.
 - Use the Oxfmt-specific [VS Code settings](templates/.vscode/settings.json) only when the target repo chooses Oxfmt. To activate [`.gitmessage`](templates/.gitmessage), run `git config --local commit.template .gitmessage` in the target repo.
