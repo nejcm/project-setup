@@ -48,7 +48,6 @@ Carried over from v1.
 | `@nejcm/configs/jest` | Jest config (CJS), same spread pattern |
 | `@nejcm/configs/release` | semantic-release config (CJS), same spread pattern |
 | `@nejcm/configs/global.d.ts` | Global utility types (`Dict`, `Maybe`, `DeepPartial`, ...); add to `include` or `types` |
-| `@nejcm/configs/vscode/global.code-snippets` | VS Code React/TS snippets; copy to `.vscode/` |
 
 ## GitHub composite actions
 

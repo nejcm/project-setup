@@ -26,7 +26,6 @@
     "./jest": "./configs/jest.config.cjs",
     "./release": "./configs/release.config.cjs",
     "./global.d.ts": "./configs/global.d.ts",
-    "./vscode/global.code-snippets": "./configs/vscode/global.code-snippets",
     "./package.json": "./package.json"
   },
   "files": [
