@@ -38,6 +38,22 @@ import base from '@nejcm/configs/oxfmt';
 export default { ...base };
 ```
 
+## Other configs
+
+Carried over from v1.
+
+| Export | Use |
+| --- | --- |
+| `@nejcm/configs/prettier` | Prettier config (CJS); `module.exports = { ...require('@nejcm/configs/prettier') }` |
+| `@nejcm/configs/jest` | Jest config (CJS), same spread pattern |
+| `@nejcm/configs/release` | semantic-release config (CJS), same spread pattern |
+| `@nejcm/configs/global.d.ts` | Global utility types (`Dict`, `Maybe`, `DeepPartial`, ...); add to `include` or `types` |
+| `@nejcm/configs/vscode/global.code-snippets` | VS Code React/TS snippets; copy to `.vscode/` |
+
+## GitHub composite actions
+
+In `github/actions/`: `bundle-size`, `lighthouse`, `yarn-cache-install`. Reference them from this repo by path (`nejcm/project-setup/configs/github/actions/<name>@main`) or copy into `.github/actions/`. They are not importable from the npm package. `yarn-cache-install` is Yarn 3/4 only.
+
 ## Release
 
 Bump `version`, then push a `configs-v<version>` tag. The workflow publishes with npm trusted publishing (OIDC); register this repo and `release-configs.yml` as the trusted publisher on npmjs.com first.

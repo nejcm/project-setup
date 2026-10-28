@@ -2,7 +2,12 @@
   "name": "@nejcm/configs",
   "version": "2.0.0",
   "description": "Shared TypeScript, Oxlint and Oxfmt configs.",
-  "keywords": ["config", "tsconfig", "oxlint", "oxfmt"],
+  "keywords": [
+    "config",
+    "tsconfig",
+    "oxlint",
+    "oxfmt"
+  ],
   "homepage": "https://github.com/nejcm/project-setup#readme",
   "repository": {
     "type": "git",
@@ -17,9 +22,16 @@
     "./tsconfig/react.json": "./configs/tsconfig/react.json",
     "./oxlint.json": "./configs/oxlint.json",
     "./oxfmt": "./configs/oxfmt.js",
+    "./prettier": "./configs/prettier.config.cjs",
+    "./jest": "./configs/jest.config.cjs",
+    "./release": "./configs/release.config.cjs",
+    "./global.d.ts": "./configs/global.d.ts",
+    "./vscode/global.code-snippets": "./configs/vscode/global.code-snippets",
     "./package.json": "./package.json"
   },
-  "files": ["configs"],
+  "files": [
+    "configs"
+  ],
   "publishConfig": {
     "access": "public",
     "provenance": true
