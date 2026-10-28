@@ -1,0 +1,27 @@
+{
+  "name": "@nejcm/configs",
+  "version": "2.0.0",
+  "description": "Shared TypeScript, Oxlint and Oxfmt configs.",
+  "keywords": ["config", "tsconfig", "oxlint", "oxfmt"],
+  "homepage": "https://github.com/nejcm/project-setup#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nejcm/project-setup.git"
+  },
+  "author": "Nejc Mursic <nmursi2@gmail.com> (https://github.com/nejcm)",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./tsconfig/base.json": "./configs/tsconfig/base.json",
+    "./tsconfig/lib.json": "./configs/tsconfig/lib.json",
+    "./tsconfig/react.json": "./configs/tsconfig/react.json",
+    "./oxlint.json": "./configs/oxlint.json",
+    "./oxfmt": "./configs/oxfmt.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["configs"],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
