@@ -19,6 +19,7 @@ bun add -d @nejcm/configs
 | `tsconfig/base.json` | Strict, `noEmit`, Bundler resolution |
 | `tsconfig/lib.json` | `base` + declarations and source maps |
 | `tsconfig/react.json` | `base` + DOM libs, `react-jsx` |
+| `tsconfig/nodenext.json` | `base` + `NodeNext` modules (Node ESM packages and CLIs) |
 
 ## Oxlint
 
@@ -27,6 +28,8 @@ bun add -d @nejcm/configs
 ```json
 { "extends": ["./node_modules/@nejcm/configs/configs/oxlint.json"] }
 ```
+
+For React projects use `oxlint.react.json` in the same folder (adds `react` and `jsx-a11y`).
 
 ## Oxfmt
 
