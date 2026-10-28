@@ -25,7 +25,7 @@ bun add -d @nejcm/configs
 `.oxlintrc.json` (Oxlint resolves `extends` relative to the file):
 
 ```json
-{ "extends": ["./node_modules/@nejcm/configs/oxlint.json"] }
+{ "extends": ["./node_modules/@nejcm/configs/configs/oxlint.json"] }
 ```
 
 ## Oxfmt
